@@ -2,6 +2,7 @@
 For Raspberry Pi, with photosensor wired to GPIO4 (pin7) and LED (with resistor!) on GPIO17 (pin11)
 5v power on pin2, ground on pin6.
 
+dependency: npm install onoff --save
 */
 
 var Gpio = require('onoff').Gpio,

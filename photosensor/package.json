@@ -1,8 +1,8 @@
 {
-  "name": "pirsensor",
+  "name": "photosensor",
   "version": "1.0.0",
-  "description": "PIR sensor for Raspberry on pin 4",
-  "main": "index.js",
+  "description": "photo sensor for Raspberry on pin 4",
+  "main": "start.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
