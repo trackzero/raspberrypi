@@ -1,0 +1,14 @@
+{
+  "name": "pirsensor",
+  "version": "1.0.0",
+  "description": "PIR sensor for Raspberry on pin 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "trackzero@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "onoff": "^1.1.7"
+  }
+}
