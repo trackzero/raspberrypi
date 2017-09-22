@@ -5,6 +5,8 @@ For Raspberry Pi, with photosensor wired to GPIO4 (pin7) and LED (with resistor!
 dependency: npm install onoff --save
 */
 
+var ip=require('./getip.js');
+
 var awsIot = require('aws-iot-device-sdk');
 
 var device = awsIot.device({
@@ -17,9 +19,9 @@ var device = awsIot.device({
 
 device
   .on('connect', function() {
-    console.log('connect');
+    console.log('connect: ' + ip);
     device.subscribe('gpio2');
-    device.publish('gpio', JSON.stringify({ "initializing": 1}));
+    device.publish('gpio', JSON.stringify({"Addresses" : ip}));
     });
 
 device
